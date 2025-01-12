@@ -1,5 +1,6 @@
 const std = @import("std");
+const config = @import("config/main.zig");
 
 pub fn main() !void {
-    std.debug.print("the start of something new...\n", .{});
+    try config.load();
 }
